@@ -1,0 +1,63 @@
+/* header */
+.ui.menu.fixed {
+    height: 60px;
+    padding-top: 15px;
+  }
+  /* Listing page */
+  .des-text{
+      height: 55px !important;
+      font-size: 12px;
+      color:brown;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+  }
+
+  /* Details page */
+  .detail-container{
+    .rp{
+      height: 80vh;
+      overflow-y:scroll;
+      .detail-text{
+        margin: auto;
+        text-align: justify;
+    }
+    .detail-text::first-letter {
+      font-size: 200%;
+      color: #8A2BE2;
+    }
+    }
+    .lp{
+      height: 100%;
+      img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    
+  }
+
+
+  // blog
+
+  .blog-add {
+    width:40% !important
+  }
+
+
+
+  .ui.grid > .row > .column > img,
+  .ui.grid > .row > img {
+    height: 100%;
+  }
+  
+
+
+
+  
+  /* coman css */
+  .ui.grid.container {
+    margin-top: 45px;
+  }

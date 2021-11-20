@@ -1,0 +1,7 @@
+export const ActionTypes = {
+    SET_BLOG: "SET_BLOG",
+    SELECTED_BLOG: "SELECTED_BLOG",
+    REMOVE_SELECTED_BLOG: "REMOVE_SELECTED_BLOG",
+    ADD_BLOG:'ADD_BLOG'
+  };
+  
