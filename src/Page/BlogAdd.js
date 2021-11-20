@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import {useDispatch,useSelector } from "react-redux";
+import {useDispatch } from "react-redux";
 import { AddBlog } from "../redux/action/blog-action";
 import { useHistory } from "react-router";
 

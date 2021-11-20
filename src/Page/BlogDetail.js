@@ -13,7 +13,7 @@ function BlogDetail() {
         if(Object.keys(blog).length === 0 ){
             history.push(`/home`)
         }
-    }, [])
+    }, [blog])
     // const dispatch = useDispatch();
     // let blog = useSelector((state) => state.blog);
     // const { id,imageUrl, title, description } = blog;
@@ -28,7 +28,7 @@ function BlogDetail() {
             <div className="ui vertical divider"></div>
             <div className="row">
               <div className="column lp">
-                <img className="ui fluid image" src={imageUrl} />
+                <img className="ui fluid image" src={imageUrl} alt="imageUrl" />
               </div>
               <div className="column rp">
               <div style={{marginBottom:'10px', position:'sticky',top:'0px'}} className="ui inverted segment">

@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div className="ui inverted menu">
         <NavLink to="/home"  className="item">
-          <img style={{padding:'0px'}} src={logo} />
+          <img style={{padding:'0px'}} src={logo} alt="logo" />
         </NavLink>
         <NavLink to="/about"  className="item">About us</NavLink>
         <NavLink  to="/blog" className="item">Blogs</NavLink>
