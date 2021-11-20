@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import {useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { AddBlog } from "../redux/action/blog-action";
 import { useHistory } from "react-router";
 
@@ -29,15 +29,13 @@ function BlogAdd() {
   };
   let handleImageChange = (event) => {
     let file = document.querySelector('input[type="file"]').files[0];
-    if(!file) return
-    getBase64(file).then((url) =>{
+    if (!file) return;
+    getBase64(file).then((url) => {
       setData({
         ...data,
         imageUrl: url,
-      })
-    }
-    );
-
+      });
+    });
   };
 
   function getBase64(file) {
@@ -51,21 +49,20 @@ function BlogAdd() {
 
   let addBlog = () => {
     if ((data.title, data.description, data.imageUrl)) {
-        dispatch(AddBlog(data))
-        Swal.fire({
-            icon: 'success',
-            text: 'Blog Added successfully',
-          }).then(()=>{
-            history.push(`/home`)
-          })
-
-    }else {
-        Swal.fire({
-            icon: 'error',
-            text: 'Please Fill Form!',
-          })
+      dispatch(AddBlog(data));
+      Swal.fire({
+        icon: "success",
+        text: "Blog Added successfully",
+      }).then(() => {
+        history.push(`/home`);
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        text: "Please Fill Form!",
+      });
     }
-  }
+  };
 
   return (
     <div className="ui container blog-add">
@@ -102,7 +99,9 @@ function BlogAdd() {
             />
           </div>
 
-          <div className="ui submit button" onClick={addBlog}>Submit</div>
+          <div className="ui submit button" onClick={addBlog}>
+            Submit
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,11 @@
 import React from "react";
 // import { Redirect } from "react-router";
-import { BrowserRouter as Router, Switch,Route,Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Header from "./componet/Header";
 import BlogListing from "./Page/BlogListing";
 import "./App.scss";
